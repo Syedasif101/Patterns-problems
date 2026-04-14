@@ -8,7 +8,6 @@ public class Pattern {
             for(int j=0; j<4; j++){
                 System.out.print("*");
             }
-
             System.out.println();
         }
     }
@@ -125,6 +124,46 @@ public class Pattern {
         }
     }
 
+    public static void pattern9(int n){
+
+        System.out.println("Pattern 10");
+
+        for(int i=0; i<=2*n-1; i++){
+
+            int stars = i;
+
+            if(i > n){
+                stars = 2 * n - i;
+            }
+            for(int j=0; j<stars; j++){
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+
+    }
+
+
+    public static void pattern10(int n){
+        System.out.println("Pattern 10");
+        int start = 1;
+        for(int i=0; i<n; i++){
+            if(i % 2 == 0){
+                start = 1;
+            } else {
+                start = 0;
+            }
+
+            for(int j = 0; j<=i; j++){
+                System.out.print(start);
+                start = 1 - start;
+            }
+
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args){
 
         Scanner sc = new Scanner(System.in);
@@ -139,6 +178,8 @@ public class Pattern {
         pattern6();
         pattern7(n);
         pattern8(n);
+        pattern9(n);
+        pattern10(n);
 
     }
 }
