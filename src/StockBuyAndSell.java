@@ -12,7 +12,6 @@ public class StockBuyAndSell {
     public static void main(String[] args){
 
         int[] arr = {1,2,3,4,6,10,11};
-
         int res = maxProfit(arr);
         System.out.println(res);
     }

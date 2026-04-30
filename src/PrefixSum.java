@@ -7,12 +7,10 @@ public class PrefixSum {
         // 1 based indexing
         for(int i=1; i<=arr.length; i++){
             prefix[i] = prefix[i-1] + arr[i-1];
-
         }
         return prefix;
     }
     public static int rangeSum(int[] prefix, int l, int r){
-
         return prefix[r] - prefix[l-1];
     }
 
